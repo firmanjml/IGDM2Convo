@@ -8,7 +8,7 @@ Put your email and request for download.
 # How to parse the data to the HTML view?
 After downloading the archive file of your Instagram data, under part 1 there will be a file called messages.json.
 
-In order for you to filter to one participants, you can run this nodejs code that I have made. 
+In order for you to filter to one participant, you can run this nodejs code that I have made. 
 
 ```
 var messages = require('./messages.json')
