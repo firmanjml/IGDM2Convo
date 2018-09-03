@@ -1,8 +1,8 @@
 <?php
     $json = file_get_contents("message.json",0,null,null); 
-    $result = $tmp = json_decode($json, true);    // using a temp variable for testing
-    $result = array_reverse($result['conversation']);
-    $yourUsername = "firmanjml";
+    $result = $tmp = json_decode($json, true); // using a temp variable for testing
+    $result = array_reverse($result['conversation']); // sort the conversation from oldest to newest.
+    $yourUsername = "firmanjml"; // write your igusername so it will display your messages at the right side.
 ?>
 
 <html>
