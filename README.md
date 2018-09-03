@@ -31,3 +31,8 @@ Remove unnessary objects like "participants" in the json file.
 Your final result will have "conversation" object only in the json file.
 
 Now you can parse the json file into the conversation view. Be sure to rename the json file to message.json.
+
+![Screenshot](https://i.imgur.com/9SQJxjf.png)
+
+Credit to Mariam Massadeh https://codepen.io/MariamMassadeh/pen/LlJvg for HTML template.
+
