@@ -1,4 +1,4 @@
-# Json2Conversation
+# IGDM2Convo
 Parse JSON data of your Instagram Direct Messages to HTML Conversation View.
 
 # How to get the JSON data?
