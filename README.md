@@ -1,13 +1,12 @@
 # Json2Conversation
 Parse JSON data of your Instagram Direct Messages to HTML Conversation View.
 
-How to get the JSON data?
+# How to get the JSON data?
 Go to your Instagram (App/Web), under settings there will be Data Download.
 Put your email and request for download. 
 
 # How to parse the data to the HTML view?
 After downloading the archive file of your Instagram data, under part 1 there will be a file called messages.json.
-
 In order for you to filter to one participant, you can run this nodejs code that I have made. 
 
 ```
