@@ -14,7 +14,7 @@ In order for you to filter to one participant, you can run this nodejs code that
 var messages = require('./messages.json')
 var fs = require('fs');
 
-var filterUsername = "firmanjml";
+var filterUsername = "someoneelse";
 
 for (var i = 0; i < messages.length; i++) {
     if (messages[i].participants.includes(filterUsername)) {
