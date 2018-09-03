@@ -1,0 +1,19 @@
+{
+    "conversation": [
+        {
+            "sender": "someoneelse",
+            "created_at": "2018-08-30T17:14:31.662267+00:00",
+            "text": "Hello"
+        },
+        {
+            "sender": "firmanjml",
+            "created_at": "2018-08-30T17:14:23.895569+00:00",
+            "text": "Hello!"
+        },
+        {
+            "sender": "someoneelse",
+            "created_at": "2018-08-30T17:14:20.227578+00:00",
+            "text": "Test!"
+        }
+    ]
+}
