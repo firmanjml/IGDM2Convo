@@ -22,17 +22,17 @@
             <div class="tooltip"><?php echo $result[$i]['sender']; ?></div>
         </div>
         <?php if (array_key_exists("media", $result[$i]) == 1): ?>
-        <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != "firmanjml") ?  '<div class="leftL">' :  '<div class="leftR">'?><img src="<?php echo $result[$i]['media'];?>"/></div>
+        <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != $yourUsername) ?  '<div class="leftL">' :  '<div class="leftR">'?><img src="<?php echo $result[$i]['media'];?>"/></div>
         <?php elseif(array_key_exists("media_url", $result[$i]) == 1): ?>
-            <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != "firmanjml") ?  '<div class="leftL">' :  '<div class="leftR">'?><img src="<?php echo $result[$i]['media_url'];?>"/></div>
+            <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != $yourUsername) ?  '<div class="leftL">' :  '<div class="leftR">'?><img src="<?php echo $result[$i]['media_url'];?>"/></div>
         <?php elseif(array_key_exists("media_share_url", $result[$i]) == 1): ?>
-            <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != "firmanjml") ?  '<div class="leftL">' :  '<div class="leftR">'?><img src="<?php echo $result[$i]['media_share_url'];?>"/></div>
+            <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != $yourUsername) ?  '<div class="leftL">' :  '<div class="leftR">'?><img src="<?php echo $result[$i]['media_share_url'];?>"/></div>
         <?php elseif(array_key_exists("video_call_action", $result[$i]) == 1): ?>
-            <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != "firmanjml") ?  '<div class="leftL">' :  '<div class="leftR">'?><b>Video Call</b></div>
+            <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != $yourUsername) ?  '<div class="leftL">' :  '<div class="leftR">'?><b>Video Call</b></div>
         <?php elseif(array_key_exists("heart", $result[$i]) == 1): ?>
-            <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != "firmanjml") ?  '<div class="leftL">' :  '<div class="leftR">'?>❤️</div>
+            <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != $yourUsername) ?  '<div class="leftL">' :  '<div class="leftR">'?>❤️</div>
         <?php else: ?>
-            <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != "firmanjml") ?  '<div class="leftL">' :  '<div class="leftR">'?><?php echo $result[$i]['text']; ?></div>
+            <div class="text <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'L' :  'R'?> <?php  echo ($result[$i]['sender'] != $yourUsername) ?  '<div class="leftL">' :  '<div class="leftR">'?><?php echo $result[$i]['text']; ?></div>
         <?php endif; ?>
     </div>
 <?php endfor; ?>
