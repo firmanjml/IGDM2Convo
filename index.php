@@ -11,11 +11,18 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header">Number of messages sent: <?php echo count($result); ?></div>
+<div class="header">Number of messages sent: <?php echo count($result); ?> | sort by: <?php echo $sort; ?></div>
 <div class="container">
   
 <?php for ($i = 0; $i < count($result); $i++): ?>
+    <?php
+        $datetime = explode("T", $result[$i]['created_at']);
+        $date = date_format(date_create($datetime[0]),"d M y");
+        $n = (substr(explode(".", $datetime[1])[0], 0, 2) > 12) ? "pm" : "am";
+        $time = (substr(explode(".", $datetime[1])[0], 0, 2) % 12) . substr(explode(".", $datetime[1])[0], 2) . " " . $n;
+    ?>
     <div class="Area">
+    <p style="font-size: 10px; color:white; <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'margin-right: 4px;' :  'margin-left: 4px;'?>" class="<?php  echo ($result[$i]['sender'] != $yourUsername) ?  'R' :  'L'?>"><?php echo $date . "<br> " . $time; ?></p>
         <?php  echo ($result[$i]['sender'] != $yourUsername) ?  '<div class="L">' :  '<div class="R">'?>
         <?php $img = ($result[$i]['sender'] != $yourUsername) ? "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxU35znsBhAWQd5BouLIVtH1P4WNa0JZ_XXpyViHOIARbM2igbNgC6_kp5" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEyVlaWx0_FK_sz86j-CnUC_pfEqw_Xq_xZUm5CMIyEI_-X2hRUpx1BHL" ?>
         <img class="pimg" src="<?php echo $img; ?>"=/>
