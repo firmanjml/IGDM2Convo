@@ -25,7 +25,7 @@
     <p style="font-size: 10px; color:white; <?php  echo ($result[$i]['sender'] != $yourUsername) ?  'margin-right: 4px;' :  'margin-left: 4px;'?>" class="<?php  echo ($result[$i]['sender'] != $yourUsername) ?  'R' :  'L'?>"><?php echo $date . "<br> " . $time; ?></p>
         <?php  echo ($result[$i]['sender'] != $yourUsername) ?  '<div class="L">' :  '<div class="R">'?>
         <?php $img = ($result[$i]['sender'] != $yourUsername) ? "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxU35znsBhAWQd5BouLIVtH1P4WNa0JZ_XXpyViHOIARbM2igbNgC6_kp5" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEyVlaWx0_FK_sz86j-CnUC_pfEqw_Xq_xZUm5CMIyEI_-X2hRUpx1BHL" ?>
-        <img class="pimg" src="<?php echo $img; ?>"=/>
+        <img class="pimg" src="<?php echo $img; ?>"/>
             <div class="tooltip"><?php echo $result[$i]['sender']; ?></div>
         </div>
         <?php if (array_key_exists("media", $result[$i]) == 1): ?>
